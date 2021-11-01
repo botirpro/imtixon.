@@ -1,0 +1,63 @@
+.call-to{
+     max-width: 1440px;
+     height: auto;
+     margin: 0 auto;
+     background-image: url(../imges/call-bgi.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     content: " ";
+}
+
+
+
+.call-to .container {
+   
+    padding: 102px 20px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.call-inner{
+    display: inline-block;
+    margin-left: auto;
+}
+
+.call-to__headding{
+    width: 100%;
+    max-width: 415px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+   
+
+    letter-spacing: -2.14286px;
+
+    color: #FFFFFF;
+}
+
+.call-to__link{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .call-to .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .call-inner{
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width: 455px){
+    .call-to__headding{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+}

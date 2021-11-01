@@ -1,0 +1,292 @@
+.good-side .container{
+    width: 100%;
+    display: flex;
+    overflow: initial;
+   
+    
+}
+
+.good-side__list{
+    width: 100%;
+    padding: 0;
+}
+
+.good-side__item{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 144px;   
+}
+
+
+
+.telemetry{
+  position: relative;
+}
+
+.telemetry::before {
+    position: absolute;
+    bottom: 0px;
+    transform: translateX(-19%);
+    width: 100%;
+    width: 780px;
+    height: 100%;
+    max-height: 152px;
+    z-index: 21;
+    display: inline-block;
+    background-image: url(../../imges/good-side-directionright.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: " ";  
+
+}
+
+.telemetry::after {
+    position: absolute;
+    top: 0;
+    transform: translateX(18%);
+    width: 100%;
+    max-width: 445px;
+    height: 100%;
+    max-height: 450px;
+    z-index: 20;
+    display: inline-block;
+    background-image: url(../../imges/Mask.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    content: " ";
+
+}
+
+
+.city{
+    position: relative;
+    
+}
+
+
+.city::before{
+    position: absolute;
+    top: 0px;
+    transform: translateX(-76%);
+    width: 100%;
+    width: 780px;
+    height: 100%;
+    max-height: 152px;
+    z-index: 21;
+    display: inline-block;
+    background-image: url(../../imges/city-strelka.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: " ";
+}
+
+.city::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-118%);
+    width: 100%;
+    max-width: 445px;
+    height: 100%;
+    max-height: 450px;
+    z-index: 20;
+    display: inline-block;
+    background-image: url(../../imges/Mask.jpg);
+    background-repeat: no-repeat;
+    // background-position: right;
+    background-size: contain;
+    content: " ";
+
+}
+
+
+.zero{
+    position: relative;
+}
+
+
+.zero::before {
+    position: absolute;
+    top: 77px;
+    transform: translateX(29%);
+    width: 100%;
+    width: 780px;
+    height: 100%;
+    max-height: 152px;
+    z-index: 21;
+    display: inline-block;
+    background-image: url(../../imges/good-side-directionright.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: " ";
+
+}
+
+
+
+.zero::after {
+    position: absolute;
+    top: 0;
+    transform: translateX(18%);
+    width: 100%;
+    max-width: 445px;
+    height: 100%;
+    max-height: 450px;
+    z-index: 20;
+    display: inline-block;
+    background-image: url(../../imges/Mask.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    content: " ";
+
+}
+
+
+
+
+
+.good-side__item:nth-child(2n) .good-side__span {
+    order: -1;
+    
+}
+
+
+
+.good-side__item--wrapper{
+    
+    width: 58%;
+    max-width: 445px;
+    
+}
+
+.good-side__item__headding{
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    // max-width: 445px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.good-side__item__paragrf{
+    margin: 0;
+    margin-bottom: 40px;
+    //  max-width: 445px;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.good-side__item__link{
+    display: inline-block;
+    padding: 14px 43px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FCB72B;
+    border: 2px solid #FCB72B
+}
+
+.good-side__item__link:hover{
+     display: inline-block;
+     background-color: white;
+     color: #FCB72B;
+     border: 2px solid #FCB72B;
+}
+
+.good-side__img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+
+@media only screen and(max-width: 830px) {
+    .good-side__item{
+        flex-direction: column;
+        max-width: 100%;
+        margin-bottom: 120px;
+    }
+
+    .good-side__item .good-side__item--wrapper {
+        order: 1;
+    }
+
+
+    .good-side__item--wrapper{
+        width: 100%;
+        max-width: 445px;
+        text-align: center;
+        margin-right: 0;
+        
+    }
+
+    .good-side__img{
+        margin-bottom: 56px;
+    }
+
+    .good-side__item__headding{
+       font-size: 32px;
+       line-height: 32px;
+        
+    }
+
+    .telemetry::before{
+        bottom: 13px;
+        transform: translateX(-14%);
+        
+    }
+
+    // .city::before {
+    //     bottom: 13px;
+    //     transform: translateX(-73%);
+        
+    // }
+}
+
+@media only screen and(max-width: 635px){
+    .good-side__img{
+        width: 311px;
+        height: 311px;
+    }
+
+    .telemetry::before{
+         bottom: 56px;
+         transform: translateX(-3%);
+    }
+    
+    .telemetry::after{
+        display: none;
+    }
+    .city::before{
+        transform: translateX(-68%);
+    }
+
+
+    .city::after{
+        display: none;
+    }
+
+    .zero::before{
+     top: 0;
+     transform: translateX(14%);
+    }
+
+    .zero::after {
+        display: none;
+    }
+}

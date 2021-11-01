@@ -1,0 +1,38 @@
+.map__img{
+    margin-bottom: 40px;
+}
+
+.map__list{
+    margin: 0;
+    margin-bottom: 72px;
+    padding: 0;
+    display: none;
+}
+
+.map-item{
+    width: 100%;
+    max-width: 311px;
+    margin: 0 auto;
+    padding: 22px 0;
+    list-style: none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    background-color: rgba(252, 183, 43, 0.15);
+    
+}
+
+.map-item + .map-item{
+    margin-top: 16px;
+}
+
+
+@media only screen and(max-width: 520px) {
+    .map__list {
+        display: block;
+    }
+    
+}

@@ -1,0 +1,161 @@
+.site-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: white
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+
+.site-logo-link {
+    z-index: 11;
+}
+
+.nav__list {
+    display: flex;
+    margin: 0;
+    margin-left: 58px;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__item +.nav__item {
+    margin-left: 32px;
+}
+
+.nav__link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.nav__link:hover {
+    color: #FCB72B;
+}
+
+.Scootin-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: auto;
+    padding: 14px 39px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background-color: #FCB72B;
+    border: 2px solid #FCB72B
+}
+
+.Scootin-link:hover {
+    display: inline-block;
+    background-color: white;
+    color: #FCB72B;
+    border: 2px solid #FCB72B;
+}
+
+.hamburger-btn {
+    display: none;
+    z-index: 11;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-btn .hamburger-menu--exit{
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .saite-main {
+        margin-top: 72px;
+    }
+    .nav {
+        display: none;
+    }
+
+    .site-header--adaptive .nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        z-index: 10;
+
+    }
+
+
+    .nav__list {
+        // width: 70%;
+        height: 100%;
+        margin-top: 73px;
+        margin-left: 0;
+        padding: 64px 25px;
+        flex-direction: column;
+        background-color: black;
+
+    }
+
+    .nav__item + .nav__item {
+
+        margin: 0;
+
+    }
+
+
+    .nav__link {
+        color: #E5ECF4;
+        margin-bottom: 24px;
+    }
+
+
+
+
+    .site-logo-link {
+        margin: 0 auto;
+
+    }
+
+
+    .Scootin-link {
+        display: none;
+    }
+
+    .site-header--adaptive .Scootin-link{
+        display: block;
+        position: fixed;
+        align-items: flex-end;
+        margin-bottom: 20px;
+        bottom: 0;
+        max-width: 70%;
+        height: auto;
+        z-index: 10;
+    }
+
+
+      .site-header--adaptive .hamburger-menu--exit{
+          display: block;
+      }
+
+      .site-header--adaptive .hamburger-menu--defolt {
+          display: none;
+      }
+
+     .hamburger-btn {
+        display: block;
+    }
+
+}

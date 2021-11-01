@@ -1,0 +1,179 @@
+
+.mobility__list{
+    margin: 0;
+    padding: 0;
+}
+
+
+.mobility__item{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    
+}
+
+
+.digital {
+    position: relative;
+}
+
+.digital::before {
+    position: absolute;
+    bottom: 17px;
+    right: 0;
+    transform: translateX(23%);
+    width: 100%;
+    width: 740px;
+    height: 100%;
+    max-height: 150px;
+    z-index: 21;
+    display: inline-block;
+    background-image: url(../imges/strelka1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: " "; 
+}
+
+.digital::after {
+    position: absolute;
+    top: 0;
+    transform: translateX(18%);
+    width: 100%;
+    max-width: 445px;
+    height: 100%;
+    max-height: 450px;
+    z-index: 20;
+    display: inline-block;
+    background-image: url(../../imges/Mask.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    content: " ";
+}
+
+.urban{
+    position: relative;
+}
+
+.urban::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-73%);
+    width: 100%;
+    width: 740px;
+    height: 100%;
+    max-height: 150px;
+    z-index: 21;
+    display: inline-block;
+    background-image: url(../../imges/strelka-chap.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: " ";
+}
+
+.urban::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-118%);
+    width: 100%;
+    max-width: 445px;
+    height: 100%;
+    max-height: 450px;
+    z-index: 20;
+    display: inline-block;
+    background-image: url(../../imges/Mask.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    content: " ";
+}
+
+
+.mobility__item:nth-child(2n) .mobility__span {
+    order: -1;
+
+}
+
+.mobility__item-wrapper{
+    max-width: 445px;
+}
+
+
+.mobility__item__img{
+    border-radius: 100%;
+}
+
+.mobility__item__headding{
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.mobility__item__paragraf{
+    font-family: Lexend Deca;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+@media only screen and(max-width: 914px){
+    .mobility__item{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobility__item-wrapper{
+        margin-top: 40px;
+    }
+
+    .mobility__item .mobility__item-wrapper{
+        order: 1;
+    }
+}
+   
+
+@media only screen and(max-width: 695px){
+    
+    .mobility__item__headding {
+        font-size: 32px;
+        line-height: 32px;
+    }
+     .digital::before{
+      bottom: 30px;
+      transform: translateX( 60%);
+
+     }
+
+
+    .digital::after{
+        display: none;
+    }
+    
+
+    .urban::before{
+        transform: translateX(-57%);
+    }
+
+    .urban::after{
+        display: none;
+    }
+
+    .mobility__item__img{
+         width: 311px;
+         height: 311px;
+    }
+}
+
+
+
